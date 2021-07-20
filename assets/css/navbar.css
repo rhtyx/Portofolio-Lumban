@@ -56,7 +56,7 @@ main{
     color: #1A1A1A;
     font-size: 18px;
     font-weight: 500;
-    margin-left: 25px;
+    margin-left: 40px;
     transition: color 0.07s ease;
 }
 .navbar.sticky .menu li a{
