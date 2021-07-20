@@ -1,0 +1,124 @@
+/* ABOUT ME SECTION STYLING */
+.about{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.about .title{
+    position: relative;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 1000;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.about .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 270px;
+    height: 3px;
+    background:#1A1A1A;
+    transform: translateX(-50%);
+    border-radius: 100px;
+}
+.about .title::after{
+    content: "who i am";
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    font-size: 30px;
+    color: #0494EF;
+    padding: 5px;
+    background:white;
+    transform: translateX(-50%);
+}
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 31px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .right .text span{
+    color: #0494EF;
+}
+.about .about-content .right p{
+    font-size: 20px;
+    text-align: justify;
+}
+.about .about-content .right a{
+    display: inline-block;
+    background: #0494EF;
+    color: white;
+    font-size: 20px;
+    padding: 8px 30px 13px 30px;
+    margin-top: 20px;
+    border-radius: 100px;
+    transition: all 0.07s ease;
+}
+.about .about-content .right a:hover{
+    background: #16405A;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 1104px) {
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+@media (max-width: 1033px) {
+    .about .max-width{
+        padding: 0;
+    }
+    .about .about-content{
+        flex-direction: column;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        float: 100%;
+    }
+    .about .about-content .column{
+        width: 100%;
+    }
+}
+@media (max-width: 907px) {
+    .about .about-content{
+        flex-direction: column;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        float: 100%;
+    }
+}
+@media (max-width: 729px) {
+    .about .about-content .right a{
+        display: flex;
+        justify-content:center;
+    }
+}
