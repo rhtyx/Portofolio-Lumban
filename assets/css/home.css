@@ -4,7 +4,7 @@
 }
 .home{
     display: flex;
-    height: 100vh;
+    height: 500px;
     color: #1A1A1A;
     font-family: 'Noto Sans JP', sans-serif;
     justify-content: space-between;
@@ -41,7 +41,7 @@
     transition: all 0.07s ease;
 }
 .home .home-content a:hover{
-    background: #16405A;
+    background: #0371B5;
 }
 .max-width1 img{
     width: 550px;
@@ -55,6 +55,9 @@
 @media (max-width: 1104px) {
     .container{
         margin: 0;
+    }
+    .home{
+        height: 75vh;
     }
     .home .home-content .text1{
         font-size: 26px;
@@ -106,7 +109,6 @@
 @media (max-width: 907px) {
     .home{
         flex-direction: row;
-        height: 100vh;
     }
     .home .home-content .text1{
         font-size: 22px;
@@ -133,7 +135,7 @@
     }
     .home{
         flex-direction: column;
-        max-height: 700px;
+        height: 600px;
     }
     .home .max-width{
         margin: 0;
@@ -164,7 +166,7 @@
     .home .home-content a{
         display: flex;
         font-size: 20px;
-        padding: 5px 50px 10px 50px;
+        padding: 8px 30px 13px 30px;
         margin: 50px 0 0 0;
         justify-content: center;
     }

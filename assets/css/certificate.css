@@ -1,0 +1,69 @@
+.certi{
+    padding-top: 100px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.certi .title::before{
+    bottom: -4px;
+    width: 400px;
+}
+.certi .title::after{
+    width:fit-content;
+    bottom: -19px;
+    content: "what i've achieved";
+}
+.certi .carousel .card{
+    background: #f0f8ff;
+    border-radius: 6px;
+    padding: 30px 25px;
+    text-align: center;
+    transition: all 0.1s ease;
+}
+.certi .carousel .card:hover{
+    background: #0494EF;
+    color: white;
+}
+.certi .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.certi .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.certi .carousel .card img{
+    height: 100%;
+    object-fit: cover;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid #0494EF!important;
+    transition: all 0.1s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active, .owl-dot:hover{
+    background: #0494EF!important;
+}
+@media (max-width: 907px) {
+    .certi .carousel .card img{
+        height: 100%;
+    }
+}
+@media (max-width: 729px) {
+    .certi .carousel .card img{
+        height: 100%;
+    }
+}

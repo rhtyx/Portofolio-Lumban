@@ -1,0 +1,83 @@
+.skills{
+    padding-top: 100px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.skills .title::before{
+    bottom: -4px;
+    width: 260px;
+}
+.skills .title::after{
+    bottom: -19px;
+    content: "what i know";
+}
+.skills .skills-content{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+.skills .skills-content .left .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills .skills-content .left p{
+    text-align: justify;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: #C1DEF4;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    border-radius: 100px;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: #0494EF;
+}
+.skills .skills-content .right .html::before{
+    width: 85%;
+}
+.skills .skills-content .right .css::before{
+    width: 70%;
+}
+.skills .skills-content .right .js::before{
+    width: 65%;
+}
+.skills .skills-content .right .python::before{
+    width: 75%;
+}
+.skills .skills-content .right .sql::before{
+    width: 65%;
+}
+@media (max-width: 907px) {
+    .skills .skills-content{
+        flex-wrap: wrap;
+    }
+    .skills .skills-content .column{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,17 @@
+footer{
+    margin-top: 100px;
+    font-family: 'Noto Sans JP', sans-serif;
+    background: #1A1A1A;
+    color: white;
+    padding: 20px 0;
+}
+footer span a{
+    color: #0494EF;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+.center{
+    text-align: center;
+}

@@ -1,0 +1,75 @@
+.projects{
+    padding-top: 100px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.projects .title::before{
+    bottom: -4px;
+    width: 340px;
+}
+.projects .title::after{
+    bottom: -19px;
+    content: "what i've done";
+}
+.projects .prj-content{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.projects .prj-content .card{
+    background: #f0f8ff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 30px 25px;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+.projects .prj-content .card .box{
+    transition: all 0.1s ease;
+}
+.projects .prj-content .card:hover{
+    background: #0494EF;
+}
+.projects .prj-content .card:hover .box{
+    transform: scale(1.02);
+}
+.projects .prj-content .card i{
+    font-size: 50px;
+    color: #16405A;
+}
+.projects .prj-content .card:hover i{
+    color: white;
+}
+.projects .prj-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 13px 0 10px 0;
+}
+.projects .prj-content .card:hover .text{
+    color: white;
+}
+.projects .prj-content .card:hover p{
+    color: white;
+}
+@media (max-width: 1033px) {
+    .projects .max-width{
+        padding: 0;
+    }
+}
+@media (max-width: 907px) {
+    .projects .prj-content{
+        flex-wrap: wrap;
+    }
+    .ma-30{
+        margin: 0;
+    }
+    .projects .prj-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 729px) {
+    .projects .prj-content .card{
+        width: 100%;
+    }
+}
