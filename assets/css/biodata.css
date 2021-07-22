@@ -1,0 +1,49 @@
+.biodata{
+    padding-top: 100px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.biodata a{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.biodata .title::before{
+    bottom: -4px;
+    width: 340px;
+}
+.biodata .title::after{
+    bottom: -19px;
+    content: "this is me";
+}
+.biodata .biodata-content{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.biodata .biodata-content .column{
+    width: 50vh;
+}
+.biodata .biodata-content .row{
+    display: flex;
+    height: 65px;
+    width: 100%;
+    align-items: center;
+}
+.biodata .biodata-content .row .info{
+    position: absolute;
+    margin-left: 45px;
+}
+.biodata .biodata-content .row i{
+    font-size: 25px;
+    color: #0494EF;
+}
+.biodata .biodata-content .info .head{
+    font-weight: 500;
+}
+.biodata .biodata-content .info .sub-title{
+    color: white;
+}
+.biodata a{
+    color: white;
+}
+.biodata a:hover{
+    color: #0494EF;
+}

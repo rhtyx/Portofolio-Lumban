@@ -27,10 +27,22 @@ $(document).ready(function () {
                     $('.media1 i').removeClass('active');
                 })
             }
-        })
-        
-        
+        })   
     };
+    // Card button
+    $('.hand').click(function () {
+        window.location = $(this).find("a").attr("href");
+        return false;
+    })
+    $('.face-mask').click(function () {
+        window.location = $(this).find("a").attr("href");
+        return false;
+    })
+    $('.bookshelf').click(function () {
+        window.location = $(this).find("a").attr("href");
+        return false;
+    })
+
     // Typing Animation
     let typed1 = new Typed(".typing1",{
         strings: ["Developer", "Student", "Engineer"],

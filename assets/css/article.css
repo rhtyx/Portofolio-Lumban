@@ -1,4 +1,5 @@
-article .title{
+article .title,
+aside .title{
     position: relative;
     text-align: center;
     font-size: 55px;
@@ -7,7 +8,8 @@ article .title{
     padding-bottom: 20px;
     font-family: 'Roboto', sans-serif;
 }
-article .title::before{
+article .title::before,
+aside .title::before{
     content: "";
     position: absolute;
     bottom: 0px;
@@ -18,7 +20,8 @@ article .title::before{
     transform: translateX(-50%);
     border-radius: 100px;
 }
-article .title::after{
+article .title::after,
+aside .title::after{
     position: absolute;
     bottom: -15px;
     left: 50%;
@@ -27,6 +30,13 @@ article .title::after{
     padding: 5px;
     background:white;
     transform: translateX(-50%);
+}
+aside .title::before{
+    background:white;
+}
+aside .title::after{
+    color: #0494EF;
+    background:#1A1A1A;
 }
 .space{
     margin: 50px;
