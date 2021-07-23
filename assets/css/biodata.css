@@ -47,3 +47,9 @@
 .biodata a:hover{
     color: #0494EF;
 }
+.biodata .biodata-content .column .pict{
+}
+.biodata .biodata-content .column .pict img{
+    margin: 0 10vh 20px 10vh;
+    width: 250px;
+}
